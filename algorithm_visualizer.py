@@ -12,7 +12,7 @@ class algopy:
 
     def __init__(self):
         self._ims = []
-        self.fps = 15
+        self.fps = 10
         self.input_shape = (0,0)
         self.title = ""
         self.comparisons = 0
@@ -25,14 +25,12 @@ class algopy:
         self.xlable_fontsize = 15
 
         self.rectangle_color_1 = 'black'
-        self.rectangle_color_2 = 'orange'
+        self.rectangle_color_2 = 'gold'
         self.rectangle_linewidth = 5
 
         self.colormap = 'cool'
         self.numbers_color = "dynamic"
         self.numbers_fontsize = 15
-        self.numbers_text_border_width = 0
-        self.numbers_text_border_color = 'black'
         self.dpi = 100
 
         self.save_dir = 'gifs/'
