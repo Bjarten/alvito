@@ -12,7 +12,7 @@ class algopy:
 
     def __init__(self):
         self._ims = []
-        self.fps = 10
+        self.fps = 5
         self.input_shape = (0,0)
         self.title = ""
         self.comparisons = 0
@@ -26,7 +26,7 @@ class algopy:
 
         self.rectangle_color_1 = 'black'
         self.rectangle_color_2 = 'gold'
-        self.rectangle_linewidth = 5
+        self.rectangle_linewidth = 4
 
         self.colormap = 'cool'
         self.numbers_color = "dynamic"
@@ -34,6 +34,8 @@ class algopy:
         self.dpi = 100
 
         self.save_dir = 'gifs/'
+        self.custom_save_name = False
+        self.save_name = ''
 
 
     def visulize_algorithm(self,array,i_1,i_2,i_3,ec1,ec2,ec3):
@@ -119,7 +121,11 @@ class algopy:
                 else:
                     self.visulize_algorithm(array,i,i+1,-1,ec1=self.rectangle_color_1,ec2=self.rectangle_color_1,ec3=self.rectangle_color_1)
 
-        imageio.mimsave(f'{self.save_dir}/bubble_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+        if self.custom_save_name:
+            imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
+        else:
+            imageio.mimsave(f'{self.save_dir}/bubble_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+
         self._ims = []
 
     def insertionSort(self, array, title="Insertion Sort"):
@@ -144,7 +150,11 @@ class algopy:
 
                 self.visulize_algorithm(array,index,position,-1,ec1=self.rectangle_color_1,ec2=self.rectangle_color_1,ec3=self.rectangle_color_1)
 
-        imageio.mimsave(f'{self.save_dir}insertion_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+        if self.custom_save_name:
+            imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
+        else:
+            imageio.mimsave(f'{self.save_dir}insertion_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+
         self._ims = []
 
     def selectionSort(self, array, title="Selection Sort"):
@@ -168,7 +178,11 @@ class algopy:
             array[fillslot] = array[positionOfMax]
             array[positionOfMax] = temp
 
-        imageio.mimsave(f'{self.save_dir}selection_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+        if self.custom_save_name:
+            imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
+        else:
+            imageio.mimsave(f'{self.save_dir}selection_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+
         self._ims = []
 
     def _array_transform(self, array):
