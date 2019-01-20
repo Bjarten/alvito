@@ -37,7 +37,7 @@ Here are links to view the notebooks on [nbviewer](https://nbviewer.jupyter.org/
 
 ## Algorithms
 
-Algorithm support so far:
+Algorithm support so far (more coming soon!):
 
 * Bubble Sort
 * Selection Sort
