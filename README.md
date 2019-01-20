@@ -4,8 +4,7 @@ Alvito is a tool for creating sorting and search algorithm visualizations and sa
 
 ## Usage
 
-You can run this project and create your own GIFs directly in the browser by clicking this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Bjarten/algorithm-visualizer-python/master)
-, or you can clone the project to your computer and install the required pip packages specified in the requirements text file.
+You can run this project and create your own GIFs directly in the browser by clicking this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Bjarten/alvito/master), or you can clone the project to your computer and install the required pip packages specified in the requirements text file.
 
 ```
 pip install -r requirements.txt
