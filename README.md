@@ -1,11 +1,10 @@
 # Alvito - An Algorithm Visualization Tool for Python
 
-Alvito is a tool for creating sorting and search algorithm visualizations and saving them as GIFs. You can find the ```algopy``` class in the ```algorithm_visualizer.py```.
+Alvito is a tool for creating sorting and search algorithm visualizations and saving them as GIFs. You can find the ```alvito``` class in the ```algorithm_visualizer.py```.
 
 ## Usage
 
-You can run this project and create your own GIFs directly in the browser by clicking this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Bjarten/algorithm-visualizer-python/master)
-, or you can clone the project to your computer and install the required pip packages specified in the requirements text file.
+You can run this project and create your own GIFs directly in the browser by clicking this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Bjarten/alvito/master), or you can clone the project to your computer and install the required pip packages specified in the requirements text file.
 
 ```
 pip install -r requirements.txt
@@ -31,9 +30,9 @@ The code above will generate the following GIF
 ## Notebooks
 Here are links to view the notebooks on [nbviewer](https://nbviewer.jupyter.org/) if GitHub should struggle with them.
 
-[Examples.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Examples.ipynb)<br>
-[Algorithms.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Algorithms.ipynb)<br>
-[Colors_and_Colormaps.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Colors_and_Colormaps.ipynb)
+[Examples.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Examples.ipynb)<br>
+[Algorithms.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Algorithms.ipynb)<br>
+[Colors_and_Colormaps.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Colors_and_Colormaps.ipynb)
 
 ## Algorithms
 
