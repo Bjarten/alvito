@@ -8,7 +8,7 @@ import numpy as np
 from tqdm import trange
 import os
 
-class algopy:
+class alvito:
 
     def __init__(self):
         self._ims = []

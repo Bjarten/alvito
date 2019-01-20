@@ -14,16 +14,16 @@ pip install -r requirements.txt
 ## Code Example
 
 ```
-from algorithm_visualizer import algopy
+from algorithm_visualizer import alvito
 
-ap = algopy()
-ap.fps = 1
-ap.xlable_fontsize = 12
-ap.title_fontsize = 12
+avt = alvito()
+avt.fps = 1
+avt.xlable_fontsize = 12
+avt.title_fontsize = 12
 
 array = [1,18,16,2,9,6,12,4,19,17,14,3,10,20,5,13,8,11,15,7]
 
-ap.bubbleSort(array)
+avt.bubbleSort(array)
 ```
 The code above will generate the following GIF
 ![](gifs/bubble_sort_list.gif)
