@@ -31,9 +31,9 @@ The code above will generate the following GIF
 ## Notebooks
 Here are links to view the notebooks on [nbviewer](https://nbviewer.jupyter.org/) if GitHub should struggle with them.
 
-[Examples.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Examples.ipynb)<br>
-[Algorithms.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Algorithms.ipynb)<br>
-[Colors_and_Colormaps.ipynb](https://nbviewer.jupyter.org/github/Bjarten/algorithm-visualizer-python/blob/master/Colors_and_Colormaps.ipynb)
+[Examples.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Examples.ipynb)<br>
+[Algorithms.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Algorithms.ipynb)<br>
+[Colors_and_Colormaps.ipynb](https://nbviewer.jupyter.org/github/Bjarten/alvito/blob/master/Colors_and_Colormaps.ipynb)
 
 ## Algorithms
 
