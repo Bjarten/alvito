@@ -1,6 +1,6 @@
 # Algopy - An Algorithm Visualizer for Python
 
-Algopy is a tool for creating [GIFs](https://en.wikipedia.org/wiki/GIF) that visualizing sorting and search algorithms. You can find the ```algopy``` class in the ```algorithm_visualizer.py```
+Algopy is a tool for creating [GIFs](https://en.wikipedia.org/wiki/GIF) that visualize sorting and search algorithms. You can find the ```algopy``` class in the ```algorithm_visualizer.py```.
 
 ## Usage
 
