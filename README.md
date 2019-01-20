@@ -1,6 +1,6 @@
 # Alvito - An Algorithm Visualization Tool for Python
 
-Alvito is a tool for creating [GIFs](https://en.wikipedia.org/wiki/GIF) that visualize sorting and search algorithms. You can find the ```algopy``` class in the ```algorithm_visualizer.py```.
+Alvito is a tool for creating sorting and search algorithm visualizations and save them as GIFs. You can find the ```algopy``` class in the ```algorithm_visualizer.py```.
 
 ## Usage
 
