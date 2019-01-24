@@ -117,9 +117,21 @@ class alvito:
                     array[i] = array[i+1]
                     array[i+1] = temp
 
-                    self.visulize_algorithm(array,i,i+1,-1,ec1=self.rectangle_color_2,ec2=self.rectangle_color_2,ec3=self.rectangle_color_2)
+                    self.visulize_algorithm(array,
+                                            i,
+                                            i+1,
+                                            -1,
+                                            ec1=self.rectangle_color_2,
+                                            ec2=self.rectangle_color_2,
+                                            ec3=self.rectangle_color_2)
                 else:
-                    self.visulize_algorithm(array,i,i+1,-1,ec1=self.rectangle_color_1,ec2=self.rectangle_color_1,ec3=self.rectangle_color_1)
+                    self.visulize_algorithm(array,
+                                            i,
+                                            i+1,
+                                            -1,
+                                            ec1=self.rectangle_color_1,
+                                            ec2=self.rectangle_color_1,
+                                            ec3=self.rectangle_color_1)
 
         if self.custom_save_name:
             imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
@@ -148,7 +160,13 @@ class alvito:
                 position = position-1
                 array[position]=currentvalue
 
-                self.visulize_algorithm(array,index,position,-1,ec1=self.rectangle_color_1,ec2=self.rectangle_color_1,ec3=self.rectangle_color_1)
+                self.visulize_algorithm(array,
+                                        index,
+                                        position,
+                                        -1,
+                                        ec1=self.rectangle_color_1,
+                                        ec2=self.rectangle_color_1,
+                                        ec3=self.rectangle_color_1)
 
         if self.custom_save_name:
             imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
@@ -169,7 +187,13 @@ class alvito:
             for location in range(1,fillslot+1):
                 self.comparisons += 1
 
-                self.visulize_algorithm(array,fillslot,positionOfMax,location,ec1=self.rectangle_color_2,ec2=self.rectangle_color_2,ec3=self.rectangle_color_1)
+                self.visulize_algorithm(array,
+                                        fillslot,
+                                        positionOfMax,
+                                        location,
+                                        ec1=self.rectangle_color_2,
+                                        ec2=self.rectangle_color_2,
+                                        ec3=self.rectangle_color_1)
 
                 if array[location]>array[positionOfMax]:
                     positionOfMax = location
@@ -184,6 +208,58 @@ class alvito:
             imageio.mimsave(f'{self.save_dir}selection_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
 
         self._ims = []
+
+    def shellSort(self, array, title="Shell Sort"):
+
+        self.title = title
+        array = self._array_transform(array)
+        self.comparisons = 0
+
+        sublistcount = len(array)//2
+        while sublistcount > 0:
+
+          for startposition in range(sublistcount):
+              self.gapInsertionSort(array,startposition,sublistcount)
+
+          sublistcount = sublistcount // 2
+
+
+          if self.custom_save_name:
+              imageio.mimsave(f'{self.save_dir}{self.save_name}.gif', self._ims, fps=self.fps)
+          else:
+              imageio.mimsave(f'{self.save_dir}shell_sort_comparisons_{self.comparisons}.gif', self._ims, fps=self.fps)
+          self._ims = []
+
+    def gapInsertionSort(self,array,start,gap):
+        for i in trange(start+gap,len(array),gap):
+
+            currentvalue = array[i]
+            position = i
+
+            self.comparisons += 1
+
+            while position>=gap and array[position-gap]>currentvalue:
+                self.visulize_algorithm(array,
+                                        position,
+                                        position-gap,
+                                        -1,
+                                        ec1=self.rectangle_color_2,
+                                        ec2=self.rectangle_color_2,
+                                        ec3=self.rectangle_color_1)
+
+
+                array[position]=array[position-gap]
+                position = position-gap
+
+            self.visulize_algorithm(array,
+                                    position,
+                                    position+gap,
+                                    -1,
+                                    ec1=self.rectangle_color_1,
+                                    ec2=self.rectangle_color_1,
+                                    ec3=self.rectangle_color_1)
+
+            array[position]=currentvalue
 
     def _array_transform(self, array):
 
